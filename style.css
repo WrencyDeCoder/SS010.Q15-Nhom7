@@ -509,3 +509,34 @@ footer p {
     .timeline::before { left: 10px; }
     .timeline-item::before { left: -42px; }
 }
+
+article {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 233, 255, 0.1);
+    line-height: 1.8;
+    font-size: 17px;
+    color: #333;
+}
+
+article h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+}
+
+article p{
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+article li {
+    margin-bottom: 12px;
+    text-align: justify;
+}
