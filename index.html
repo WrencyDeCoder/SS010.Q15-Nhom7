@@ -3,20 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nhóm 7 - SS010</title>
+<meta name="description" content="Đường lối kháng chiến chống Mỹ, cứu nước của Đảng Cộng sản Việt Nam giai đoạn 1954-1975">
+<meta name="keywords" content="lịch sử Đảng, kháng chiến, Việt Nam, 1954-1975">
+<title>Nhóm 7 - Lịch sử Đảng Cộng sản Việt Nam 1954-1975</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR CỐ ĐỊNH -->
+<nav class="navbar">
+    <a href="#" class="navbar-brand">Lịch sử Đảng</a>
+    <div class="navbar-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="#phan1">Cơ sở lý luận</a></li>
+        <li><a href="#phan2">Đường lối từng miền</a></li>
+        <li><a href="#phan3">Đường lối chung</a></li>
+        <li><a href="#phan4">Ý nghĩa & Kinh nghiệm</a></li>
+        <li><a href="#phan5">Thành viên</a></li>
+    </ul>
+</nav>
+
+<!-- NÚT SCROLL TO TOP -->
+<div class="scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top"></div>
+
 <header>
     <h1>NHÓM 7</h1>
     <p><strong>Chủ đề:</strong> chứng minh rằng, đường lối kháng chiến chống Mỹ, cứu nước của Đảng Cộng sản Việt Nam đã phản ánh đúng quy luật vận động của cách mạng ở từng miền và của chung cả nước giai đoạn 1954-1975</p>
-    <div class="scroll-indicator"></div>
+    <div class="scroll-indicator" aria-hidden="true"></div>
 </header>
 
 <!-- PHẦN I -->
 <section id="phan1">
-    <h2 class="section-title">Phần I. CỞ SỞ LÝ LUẬN VÀ BỐI CẢNH LỊCH SỬ</h2>
+    <h2 class="section-title">Phần I. CƠ SỞ LÝ LUẬN VÀ BỐI CẢNH LỊCH SỬ</h2>
     <p class="normal-text">
         Sau Hiệp định Giơnevơ năm 1954, đất nước Việt Nam tạm thời chia cắt làm hai miền, 
         miền Bắc bước vào công cuộc xây dựng chủ nghĩa xã hội, trong khi miền Nam chịu sự kiểm soát của chính quyền Mỹ - Diệm. 
@@ -26,31 +48,35 @@
     <div class="table-container">
         <h3>Bảng so sánh: Việt Nam và bối cảnh quốc tế sau 1954</h3>
         <table>
-            <tr>
-                <th>Tiêu chí</th>
-                <th>Việt Nam</th>
-                <th>Quốc tế</th>
-            </tr>
-            <tr>
-                <td>Tình hình chính trị</td>
-                <td>Đất nước chia cắt hai miền; miền Bắc xây dựng CNXH, miền Nam dưới chế độ Mỹ - Diệm.</td>
-                <td>Chiến tranh lạnh giữa Mỹ và Liên Xô gay gắt; thế giới chia thành hai cực đối lập.</td>
-            </tr>
-            <tr>
-                <td>Kinh tế</td>
-                <td>Miền Bắc khôi phục sau chiến tranh; miền Nam chịu ảnh hưởng kinh tế tư bản phụ thuộc Mỹ.</td>
-                <td>Kinh tế phương Tây phát triển mạnh; các nước xã hội chủ nghĩa cũng phục hồi sau chiến tranh.</td>
-            </tr>
-            <tr>
-                <td>Quan hệ quốc tế</td>
-                <td>Miền Bắc nhận được viện trợ từ khối XHCN; miền Nam chịu chi phối của Mỹ và đồng minh.</td>
-                <td>Các phong trào giải phóng dân tộc lan rộng ở châu Á, Phi, Mỹ Latinh.</td>
-            </tr>
-            <tr>
-                <td>Phong trào cách mạng</td>
-                <td>Đảng lãnh đạo toàn dân kiên trì con đường giải phóng miền Nam, thống nhất đất nước.</td>
-                <td>Nhiều nước thuộc địa giành độc lập; làn sóng chống đế quốc dâng cao trên toàn cầu.</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Tiêu chí</th>
+                    <th>Việt Nam</th>
+                    <th>Quốc tế</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tình hình chính trị</td>
+                    <td>Đất nước chia cắt hai miền; miền Bắc xây dựng CNXH, miền Nam dưới chế độ Mỹ - Diệm.</td>
+                    <td>Chiến tranh lạnh giữa Mỹ và Liên Xô gay gắt; thế giới chia thành hai cực đối lập.</td>
+                </tr>
+                <tr>
+                    <td>Kinh tế</td>
+                    <td>Miền Bắc khôi phục sau chiến tranh; miền Nam chịu ảnh hưởng kinh tế tư bản phụ thuộc Mỹ.</td>
+                    <td>Kinh tế phương Tây phát triển mạnh; các nước xã hội chủ nghĩa cũng phục hồi sau chiến tranh.</td>
+                </tr>
+                <tr>
+                    <td>Quan hệ quốc tế</td>
+                    <td>Miền Bắc nhận được viện trợ từ khối XHCN; miền Nam chịu chi phối của Mỹ và đồng minh.</td>
+                    <td>Các phong trào giải phóng dân tộc lan rộng ở châu Á, Phi, Mỹ Latinh.</td>
+                </tr>
+                <tr>
+                    <td>Phong trào cách mạng</td>
+                    <td>Đảng lãnh đạo toàn dân kiên trì con đường giải phóng miền Nam, thống nhất đất nước.</td>
+                    <td>Nhiều nước thuộc địa giành độc lập; làn sóng chống đế quốc dâng cao trên toàn cầu.</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </section>
@@ -74,14 +100,14 @@
             </div>
         </a>
 
-        <a href="1965-1968.html" class="timeline-item" >
+        <a href="1965-1968.html" class="timeline-item">
             <div class="timeline-content">
                 <h3>1965-1968: Đánh bại "Chiến tranh cục bộ"</h3>
                 <p>Đỉnh cao là Tổng tiến công và nổi dậy Tết Mậu Thân 1968.</p>
             </div>
         </a>
 
-        <a href="1969-1975.html" class="timeline-item" >
+        <a href="1969-1975.html" class="timeline-item">
             <div class="timeline-content">
                 <h3>1969-1975: Việt Nam hóa chiến tranh và thắng lợi hoàn toàn</h3>
                 <p>Chiến dịch Hồ Chí Minh lịch sử, giải phóng miền Nam, thống nhất đất nước.</p>
@@ -91,38 +117,37 @@
     </div>
 </section>
 
-
 <!-- PHẦN III -->
 <section id="phan3">
     <h2 class="section-title">Phần III. Đường lối chung của cả nước</h2>
     <div class="achievements-grid">
         <div class="achievement-card">
-            <div class="achievement-icon">🏆</div>
+            <div class="achievement-icon" aria-hidden="true">🏆</div>
             <h3>Thắng lợi quân sự</h3>
             <p>Đánh bại đế quốc Mỹ - siêu cường quân sự hùng mạnh nhất thế giới, giải phóng hoàn toàn miền Nam.</p>
         </div>
         <div class="achievement-card">
-            <div class="achievement-icon">🇻🇳</div>
+            <div class="achievement-icon" aria-hidden="true">🇻🇳</div>
             <h3>Thống nhất đất nước</h3>
             <p>Kết thúc tình trạng chia cắt đất nước, mở ra kỷ nguyên độc lập, tự do và thống nhất cho dân tộc.</p>
         </div>
         <div class="achievement-card">
-            <div class="achievement-icon">🌍</div>
+            <div class="achievement-icon" aria-hidden="true">🌍</div>
             <h3>Ý nghĩa quốc tế</h3>
             <p>Cổ vũ phong trào giải phóng dân tộc trên toàn thế giới, góp phần vào cuộc đấu tranh chống chủ nghĩa thực dân.</p>
         </div>
         <div class="achievement-card">
-            <div class="achievement-icon">💪</div>
+            <div class="achievement-icon" aria-hidden="true">💪</div>
             <h3>Sức mạnh dân tộc</h3>
             <p>Khẳng định ý chí kiên cường, tinh thần đoàn kết và trí tuệ của dân tộc Việt Nam trong thời đại Hồ Chí Minh.</p>
         </div>
         <div class="achievement-card">
-            <div class="achievement-icon">📚</div>
+            <div class="achievement-icon" aria-hidden="true">📚</div>
             <h3>Bài học lịch sử</h3>
             <p>Để lại những bài học quý báu về đường lối cách mạng, nghệ thuật quân sự và xây dựng khối đại đoàn kết dân tộc.</p>
         </div>
         <div class="achievement-card">
-            <div class="achievement-icon">🕊️</div>
+            <div class="achievement-icon" aria-hidden="true">🕊️</div>
             <h3>Hòa bình và phát triển</h3>
             <p>Mở ra thời kỳ mới của đất nước, tập trung xây dựng và phát triển kinh tế - xã hội trong hòa bình.</p>
         </div>
@@ -134,27 +159,27 @@
     <h2 class="section-title">Phần IV. Ý nghĩa và Kinh nghiệm lịch sử</h2>
     <div class="lessons-container">
         <div class="lesson-item">
-            <span class="lesson-number">1</span>
+            <span class="lesson-number" aria-hidden="true">1</span>
             <h3>Đường lối đúng đắn của Đảng</h3>
             <p>Đảng Cộng sản Việt Nam đã xây dựng đường lối cách mạng sáng tạo, phù hợp với thực tiễn Việt Nam và xu thế phát triển của thời đại, kết hợp đấu tranh chính trị với đấu tranh vũ trang.</p>
         </div>
         <div class="lesson-item">
-            <span class="lesson-number">2</span>
+            <span class="lesson-number" aria-hidden="true">2</span>
             <h3>Sức mạnh đại đoàn kết dân tộc</h3>
             <p>Khối đại đoàn kết toàn dân tộc là nguồn sức mạnh vô tận. Đoàn kết các tầng lớp nhân dân, tập hợp mọi lực lượng yêu nước là nhân tố quyết định thắng lợi.</p>
         </div>
         <div class="lesson-item">
-            <span class="lesson-number">3</span>
+            <span class="lesson-number" aria-hidden="true">3</span>
             <h3>Kết hợp sức mạnh dân tộc với sức mạnh thời đại</h3>
             <p>Cuộc kháng chiến thắng lợi nhờ biết kết hợp sức mạnh dân tộc với sức mạnh quốc tế, tranh thủ sự ủng hộ của các nước xã hội chủ nghĩa và phong trào tiến bộ thế giới.</p>
         </div>
         <div class="lesson-item">
-            <span class="lesson-number">4</span>
+            <span class="lesson-number" aria-hidden="true">4</span>
             <h3>Nghệ thuật quân sự linh hoạt</h3>
             <p>Chiến tranh nhân dân với phương châm "lấy yếu thắng mạnh", kết hợp chiến tranh chính quy với du kích, đánh địch trên mọi mặt trận và linh hoạt trong mọi hoàn cảnh.</p>
         </div>
         <div class="lesson-item">
-            <span class="lesson-number">5</span>
+            <span class="lesson-number" aria-hidden="true">5</span>
             <h3>Tinh thần yêu nước và ý chí tự lực</h3>
             <p>Tinh thần yêu nước nồng nàn, ý chí độc lập tự chủ và quyết tâm chiến đấu đến cùng vì độc lập, tự do của dân tộc là sức mạnh tinh thần to lớn.</p>
         </div>
@@ -164,15 +189,10 @@
 <!-- PHẦN V -->
 <section id="phan5">
     <h2 class="section-title">Phần V. Thành viên nhóm</h2>
-</section>
-
-<footer>
-    <h2 class="section-title">Thành viên nhóm</h2>
     <div class="team-grid">
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👨</div>
-                <!-- Thay bằng: <img src="duong_dan_anh.jpg" alt="Nguyễn Văn Anh"> -->
+                <div class="member-placeholder" aria-hidden="true">👨</div>
             </div>
             <h3>Phạm Quang Vũ</h3>
             <p class="member-id">MSSV: 23521814</p>
@@ -181,7 +201,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👩</div>
+                <div class="member-placeholder" aria-hidden="true">👩</div>
             </div>
             <h3>Nguyễn Hoàng Quốc Cường</h3>
             <p class="member-id">MSSV: 23520200</p>
@@ -190,7 +210,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👨</div>
+                <div class="member-placeholder" aria-hidden="true">👨</div>
             </div>
             <h3>Thân Thành Khởi</h3>
             <p class="member-id">MSSV: 23520788</p>
@@ -199,7 +219,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👩</div>
+                <div class="member-placeholder" aria-hidden="true">👩</div>
             </div>
             <h3>Lê Minh Nghĩa</h3>
             <p class="member-id">MSSV: 23521012</p>
@@ -208,7 +228,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👨</div>
+                <div class="member-placeholder" aria-hidden="true">👨</div>
             </div>
             <h3>Phạm Đức Thắng</h3>
             <p class="member-id">MSSV: 23521430</p>
@@ -217,7 +237,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👩</div>
+                <div class="member-placeholder" aria-hidden="true">👩</div>
             </div>
             <h3>Trần Lê Quốc Thịnh</h3>
             <p class="member-id">MSSV: 23521513</p>
@@ -226,7 +246,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👨</div>
+                <div class="member-placeholder" aria-hidden="true">👨</div>
             </div>
             <h3>Lê Anh Tuấn</h3>
             <p class="member-id">MSSV: 23521712</p>
@@ -235,15 +255,18 @@
 
         <div class="team-member">
             <div class="member-image">
-                <div class="member-placeholder">👩</div>
+                <div class="member-placeholder" aria-hidden="true">👩</div>
             </div>
             <h3>Nguyễn Dũng Mạnh Toàn</h3>
             <p class="member-id">MSSV: 21521545</p>
             <p class="member-role">Thành viên</p>
         </div>
     </div>
+</section>
 
-    <p ><strong>Năm học 2025-2026 | Lịch sử Đảng Cộng sản Việt Nam</strong></p>
+<footer>
+    <h2 class="section-title">Thông tin nhóm</h2>
+    <p><strong>Năm học 2025-2026 | Lịch sử Đảng Cộng sản Việt Nam</strong></p>
     <p>Thực hiện bởi Nhóm 7 | Lớp SS010.Q15</p>
 </footer>
 
