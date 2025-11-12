@@ -4,13 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SS010.Q15 - NHÓM 7</title>
+<link rel="icon" type="image/x-icon" href="image/star.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR CỐ ĐỊNH -->
+<nav class="navbar">
+    <a href="#" class="navbar-brand">
+        <img src="image/icon.png" alt="ĐCSVN">
+    </a>
+    <div class="navbar-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="#phan1">Cơ sở lý luận</a></li>
+        <li><a href="#phan2">Đường lối từng miền</a></li>
+        <li><a href="#phan3">Đường lối chung</a></li>
+        <li><a href="#phan4">Ý nghĩa & Kinh nghiệm</a></li>
+        <li><a href="#phan5">Kết luận</a></li>
+    </ul>
+</nav>
+
+<!-- NÚT SCROLL TO TOP -->
+<div class="scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top"></div>
+
+
 <header>
-    <h2>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</h2>
-    <h2>MÔN LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM</h2>
+    <div class="logo-section">
+        <div class="logo-image">
+            <img src="image/LOGO UIT FULL.png" alt="logo">
+        </div>
+        <div>
+            <h2>LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM</h2>
+        </div>
+    </div>
+
     <h1>NHÓM 7</h1>
     <p><strong>Chủ đề:</strong> Chứng minh rằng, đường lối kháng chiến chống Mỹ, cứu nước của Đảng Cộng sản Việt Nam đã phản ánh đúng quy luật vận động của cách mạng ở từng miền và của chung cả nước giai đoạn 1954-1975</p>
     <div class="scroll-indicator"></div>
@@ -61,7 +92,6 @@
 <section id="phan2">
     <h2 class="section-title">Phần II. ĐƯỜNG LỐI CÁCH MẠNG Ở TỪNG MIỀN (1954-1975)</h2>
     <div class="timeline">
-
         <a href="1954-1960.html" class="timeline-item">
             <div class="timeline-content">
                 <h3>1954-1960: Giai đoạn khôi phục và giữ gìn lực lượng</h3>
@@ -93,79 +123,84 @@
     </div>
 </section>
 
-
 <!-- PHẦN III -->
 <section id="phan3">
-    <h2 class="section-title">Phần III. Đường lối chung của cả nước</h2>
-    <div class="achievements-grid">
-        <div class="achievement-card">
-            <div class="achievement-icon">🏆</div>
-            <h3>Thắng lợi quân sự</h3>
-            <p>Đánh bại đế quốc Mỹ - siêu cường quân sự hùng mạnh nhất thế giới, giải phóng hoàn toàn miền Nam.</p>
+    <h2 class="section-title">Phần III. ĐƯỜNG LỐI CHUNG CỦA CẢ NƯỚC</h2>
+    <p class="normal-text">
+        Trong giai đoạn 1954 - 1975, Đảng Cộng sản Việt Nam đã đề ra đường lối chiến lược chung cho cách mạng cả nước 
+        là tiến hành đồng thời hai nhiệm vụ cách mạng khác nhau ở hai miền với mục tiêu chung là giải phóng miền Nam, thống nhất đất nước. 
+        Tính đúng đắn của đường lối này thể hiện qua các nội dung sau:
+    </p>
+    <div class="achievements-grid" id="achievementsGrid">
+        <div class="achievement-card" onclick="toggleContent(this)">
+            <div class="achievement-item">
+                <span class="achievement-number">1</span>
+                <h3>Kết hợp hai nhiệm vụ chiến lược</h3>
+                <h4></h4>
+            </div>
+            <div class="expandable-content">
+                <p> <strong>Sau chiến thắng Điện Biên Phủ năm 1954</strong>, đất nước tạm thời bị chia cắt làm hai miền với hai chế độ khác nhau. Trước tình hình đó, Đảng ta đề ra đường lối chiến lược đúng đắn: kết hợp đồng thời hai nhiệm vụ cách mạng ở hai miền nhằm hướng tới mục tiêu chung là độc lập và thống nhất đất nước.</p>
+                <p><strong>Miền Bắc được xác định là hậu phương lớn</strong>, nhanh chóng tiến hành cách mạng xã hội chủ nghĩa, khôi phục và phát triển kinh tế, củng cố quốc phòng, xây dựng nền tảng chính trị – kinh tế vững chắc. Miền Nam tiếp tục cách mạng dân tộc dân chủ, đấu tranh chống đế quốc Mỹ và chính quyền tay sai, tiêu biểu là phong trào Đồng Khởi (1959–1960) mở đầu cho cao trào cách mạng mới.</p>
+                <p><strong>Hai miền gắn bó chặt chẽ</strong>: miền Bắc vừa xây dựng chủ nghĩa xã hội, vừa chi viện sức người, sức của cho miền Nam; miền Nam kiên cường chiến đấu, góp phần bảo vệ hậu phương xã hội chủ nghĩa. Đường lối “củng cố miền Bắc, chiếu cố miền Nam” thể hiện rõ tinh thần thống nhất ý chí và hành động của toàn dân tộc.</p>
+            </div>
         </div>
-        <div class="achievement-card">
-            <div class="achievement-icon">🇻🇳</div>
-            <h3>Thống nhất đất nước</h3>
-            <p>Kết thúc tình trạng chia cắt đất nước, mở ra kỷ nguyên độc lập, tự do và thống nhất cho dân tộc.</p>
+        <div class="achievement-card" onclick="toggleContent(this)">
+            <div class="achievement-item">
+                <span class="achievement-number">2</span>
+                <h3>Mục tiêu giải phóng miền Nam, thống nhất đất nước</h3>
+                <h4></h4>
+            </div>
+
+            <div class="expandable-content">
+                <p>Dù nhiệm vụ ở mỗi miền khác nhau, cả hai đều hướng về mục tiêu cao nhất: <strong>giải phóng miền Nam, thống nhất Tổ quốc</strong>. Đây là khát vọng thiêng liêng và là mục tiêu chiến lược xuyên suốt trong mọi chủ trương, nghị quyết của Đảng.</p>
+                <p><strong>Miền Bắc</strong> xem việc xây dựng chủ nghĩa xã hội là cách thiết thực góp phần vào sự nghiệp giải phóng miền Nam; <strong>Miền Nam</strong> chiến đấu không chỉ để tự giải phóng mà còn bảo vệ miền Bắc – nền tảng của chủ nghĩa xã hội.</p>
+                <p>Toàn dân Việt Nam đồng lòng với tinh thần <strong>“Xẻ dọc Trường Sơn đi cứu nước”</strong>, <strong>“Tất cả vì miền Nam ruột thịt, tất cả để chiến thắng”</strong>. Mục tiêu thống nhất đất nước cũng giúp Việt Nam tranh thủ được sự ủng hộ rộng rãi của nhân dân tiến bộ trên thế giới, kể cả nhân dân Mỹ yêu chuộng hòa bình, tạo nên sức mạnh to lớn cả về vật chất lẫn tinh thần.</p>
+            </div>
         </div>
-        <div class="achievement-card">
-            <div class="achievement-icon">🌍</div>
-            <h3>Ý nghĩa quốc tế</h3>
-            <p>Cổ vũ phong trào giải phóng dân tộc trên toàn thế giới, góp phần vào cuộc đấu tranh chống chủ nghĩa thực dân.</p>
-        </div>
-        <div class="achievement-card">
-            <div class="achievement-icon">💪</div>
-            <h3>Sức mạnh dân tộc</h3>
-            <p>Khẳng định ý chí kiên cường, tinh thần đoàn kết và trí tuệ của dân tộc Việt Nam trong thời đại Hồ Chí Minh.</p>
-        </div>
-        <div class="achievement-card">
-            <div class="achievement-icon">📚</div>
-            <h3>Bài học lịch sử</h3>
-            <p>Để lại những bài học quý báu về đường lối cách mạng, nghệ thuật quân sự và xây dựng khối đại đoàn kết dân tộc.</p>
-        </div>
-        <div class="achievement-card">
-            <div class="achievement-icon">🕊️</div>
-            <h3>Hòa bình và phát triển</h3>
-            <p>Mở ra thời kỳ mới của đất nước, tập trung xây dựng và phát triển kinh tế - xã hội trong hòa bình.</p>
+        <div class="achievement-card" onclick="toggleContent(this)">
+            <div class="achievement-item">
+                <span class="achievement-number">3</span>
+                <h3>Thắng lợi 1975 – Minh chứng cuối cùng đường lối là đúng đắn, hợp quy luật</h3>
+                <h4></h4>
+            </div>
+            <div class="expandable-content">
+                <p><strong>Chiến thắng lịch sử ngày 30/4/1975</strong>  miền Nam hoàn toàn giải phóng, đất nước thống nhất. Đây là kết quả tất yếu của đường lối đúng đắn, sáng tạo của Đảng.</p>
+                <p><strong>Thực tiễn chứng minh</strong>, chỉ có con đường giương cao hai ngọn cờ: độc lập dân tộc và chủ nghĩa xã hội mới tập hợp được sức mạnh toàn dân tộc và thời đại để giành thắng lợi triệt để.</p>
+                <p><strong>Thắng lợi năm 1975</strong> không chỉ hoàn thành sự nghiệp giải phóng miền Nam, thống nhất đất nước, mà còn khẳng định chân lý mang tính quy luật của cách mạng Việt Nam:</p>
+                <i>"Độc lập dân tộc là điều kiện tiên quyết của chủ nghĩa xã hội, còn chủ nghĩa xã hội là nền tảng vững chắc bảo đảm cho độc lập dân tộc."</i>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- PHẦN IV -->
 <section id="phan4">
-    <h2 class="section-title">Phần IV. Ý nghĩa và Kinh nghiệm lịch sử</h2>
-    <div class="lessons-container">
-        <div class="lesson-item">
-            <span class="lesson-number">1</span>
-            <h3>Đường lối đúng đắn của Đảng</h3>
-            <p>Đảng Cộng sản Việt Nam đã xây dựng đường lối cách mạng sáng tạo, phù hợp với thực tiễn Việt Nam và xu thế phát triển của thời đại, kết hợp đấu tranh chính trị với đấu tranh vũ trang.</p>
-        </div>
-        <div class="lesson-item">
-            <span class="lesson-number">2</span>
-            <h3>Sức mạnh đại đoàn kết dân tộc</h3>
-            <p>Khối đại đoàn kết toàn dân tộc là nguồn sức mạnh vô tận. Đoàn kết các tầng lớp nhân dân, tập hợp mọi lực lượng yêu nước là nhân tố quyết định thắng lợi.</p>
-        </div>
-        <div class="lesson-item">
-            <span class="lesson-number">3</span>
-            <h3>Kết hợp sức mạnh dân tộc với sức mạnh thời đại</h3>
-            <p>Cuộc kháng chiến thắng lợi nhờ biết kết hợp sức mạnh dân tộc với sức mạnh quốc tế, tranh thủ sự ủng hộ của các nước xã hội chủ nghĩa và phong trào tiến bộ thế giới.</p>
-        </div>
-        <div class="lesson-item">
-            <span class="lesson-number">4</span>
-            <h3>Nghệ thuật quân sự linh hoạt</h3>
-            <p>Chiến tranh nhân dân với phương châm "lấy yếu thắng mạnh", kết hợp chiến tranh chính quy với du kích, đánh địch trên mọi mặt trận và linh hoạt trong mọi hoàn cảnh.</p>
-        </div>
-        <div class="lesson-item">
-            <span class="lesson-number">5</span>
-            <h3>Tinh thần yêu nước và ý chí tự lực</h3>
-            <p>Tinh thần yêu nước nồng nàn, ý chí độc lập tự chủ và quyết tâm chiến đấu đến cùng vì độc lập, tự do của dân tộc là sức mạnh tinh thần to lớn.</p>
-        </div>
-    </div>
+    <h2 class="section-title">Phần IV. Ý NGHĨA VÀ KINH NGHIỆM LỊCH SỬ</h2>
+    <p class="normal-text"> 
+     Thắng lợi của quân và dân Việt Nam trong cuộc kháng chiến chống Mỹ, cứu nước (1954–1975) là thành quả vĩ đại nhất trong sự nghiệp giải phóng dân tộc và bảo vệ Tổ quốc dưới sự lãnh đạo của Đảng Cộng sản Việt Nam và Chủ tịch Hồ Chí Minh. Đây là trang sử hào hùng, chói lọi nhất trong lịch sử dựng nước và giữ nước của dân tộc, đồng thời là thắng lợi tiêu biểu của phong trào cách mạng thế giới trong thế kỷ XX. Chiến thắng này góp phần thúc đẩy phong trào đấu tranh vì độc lập, hòa bình và tiến bộ xã hội trên toàn cầu, cổ vũ các dân tộc bị áp bức đứng lên giành tự do, góp phần làm tan rã chủ nghĩa thực dân mới. Thắng lợi đó khẳng định tính đúng đắn và sáng suốt của đường lối kháng chiến chống Mỹ do Đảng ta đề ra, phản ánh quy luật vận động của cách mạng Việt Nam. Đại hội IV của Đảng (12/1976) đã đánh giá đây là một chiến công vĩ đại, có tầm vóc quốc tế to lớn, mãi mãi được ghi vào lịch sử dân tộc và nhân loại như biểu tượng sáng ngời của chủ nghĩa anh hùng cách mạng và trí tuệ con người.
+    
+    </p>
+    <p class="normal-text">
+          Thắng lợi của cuộc kháng chiến chống Mỹ, cứu nước cũng giúp toàn Đảng, toàn dân và toàn quân ta đúc kết những bài học kinh nghiệm quý báu, đó là:  
+    </p>
+    <ul class="experience-list">
+        <li>Kiên định quyết tâm, quyết đánh, quyết thắng đế quốc Mỹ xâm lược;</li>
+        <li>Đường lối kháng chiến chống Mỹ, cứu nước đúng đắn, sáng tạo, độc lập, tự chủ;</li>
+        <li>Nghệ thuật tiến hành chiến tranh nhân dân sáng tạo;</li>
+        <li>Tổ chức lực lượng cả nước đánh giặc;</li>
+        <li>Căn cứ địa cách mạng, hậu phương kháng chiến vững chắc;</li>
+        <li>Đoàn kết, liên minh với nhân dân Lào, nhân dân Campuchia;</li>
+        <li>Đoàn kết quốc tế, phát huy sức mạnh của thời đại;</li>
+        <li>Bồi dưỡng và phát huy nhân tố con người.</li>
+    </ul>
 </section>
 
 <!-- PHẦN V -->
 <section id="phan5">
-    <h2 class="section-title">Phần V. Thành viên nhóm</h2>
+    <h2 class="section-title">Phần V. KẾT LUẬN</h2>
+    <p class="normal-text">Cuộc kháng chiến chống Mỹ, cứu nước (1954 – 1975) là một bản hùng ca vĩ đại của dân tộc Việt Nam, minh chứng cho trí tuệ, bản lĩnh và sức mạnh đại đoàn kết toàn dân tộc dưới sự lãnh đạo sáng suốt của Đảng Cộng sản Việt Nam.</p>
+    <p class="normal-text">Đường lối chiến lược kết hợp hai nhiệm vụ cách mạng ở hai miền, vừa xây dựng chủ nghĩa xã hội ở miền Bắc, vừa tiến hành cách mạng dân tộc dân chủ nhân dân ở miền Nam, đã phản ánh đúng quy luật vận động của cách mạng và phù hợp với thực tiễn lịch sử dân tộc. Từ phong trào Đồng khởi đến các chiến thắng vang dội trong chiến tranh đặc biệt, chiến tranh cục bộ, Việt Nam hóa chiến tranh, nhân dân ta từng bước đánh bại mọi chiến lược của đế quốc Mỹ. Đại thắng mùa Xuân 1975 là kết quả tất yếu của một đường lối đúng đắn, khoa học, độc lập tự chủ và sáng tạo.</p>
+    <p class="normal-text">Thắng lợi này không chỉ giải phóng miền Nam, thống nhất Tổ quốc, mà còn góp phần làm rung chuyển hệ thống thực dân mới trên thế giới, cổ vũ mạnh mẽ phong trào giải phóng dân tộc toàn cầu. Đây là thắng lợi vĩ đại nhất trong thế kỷ XX của nhân dân Việt Nam, để lại nhiều bài học quý giá về sự kiên định mục tiêu, nghệ thuật chỉ đạo cách mạng, sức mạnh toàn dân và sự kết hợp sức mạnh dân tộc với sức mạnh thời đại.</p>
 </section>
 
 <footer>
@@ -201,7 +236,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <img src="image/temp.jpg" alt="Lê Minh Nghĩa">
+                <img src="image/nghia.jpg" alt="Lê Minh Nghĩa">
             </div>
             <h3>Lê Minh Nghĩa</h3>
             <p class="member-id">MSSV: 23521012</p>
@@ -228,7 +263,7 @@
 
         <div class="team-member">
             <div class="member-image">
-                <img src="image/temp.jpg" alt="Lê Minh Nghĩa">
+                <img src="image/tuan.png" alt="Lê Anh Tuấn">
             </div>
             <h3>Lê Anh Tuấn</h3>
             <p class="member-id">MSSV: 23521712</p>
